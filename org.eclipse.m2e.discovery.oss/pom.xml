@@ -23,8 +23,8 @@
    -->
 
   <properties>
-    <catalog.server-url>https://repository.sonatype.org</catalog.server-url>
-    <catalog.repo-name>forge-sites</catalog.repo-name>
+    <catalog.server-url>http://repository.tesla.io:8081/nexus</catalog.server-url>
+    <catalog.repo-name>m2e.releases</catalog.repo-name>
 
     <catalog.repo-path>m2e-discovery-catalog</catalog.repo-path>
     <catalog.repo-url-compressed>${catalog.server-url}/service/local/repositories/${catalog.repo-name}/content-compressed</catalog.repo-url-compressed>
@@ -154,7 +154,7 @@
                 </goals>
                 <configuration>
                   <file>${project.build.directory}/${project.artifactId}-assembly.zip</file>
-                  <serverId>forge-releases</serverId>
+                  <serverId>m2e.releases</serverId>
                   <repositoryUrl>${catalog.repo-url-compressed}</repositoryUrl>
                   <repositoryPath>${catalog.repo-path}</repositoryPath>
                 </configuration>
