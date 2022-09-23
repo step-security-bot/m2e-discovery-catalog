@@ -21,7 +21,9 @@
 
    This assumes nexus-pro with nexus-unpack-plugin  
    -->
-
+  <properties>
+    <connectorUrl>https://repo1.maven.org/maven2/.m2e/connectors</connectorUrl>
+  </properties>
   <build>
     <resources>
       <resource>
@@ -34,35 +36,49 @@
           <include>lifecycle/**</include>
         </includes>
       </resource>
+      <resource>
+        <directory>src/main/resources-filtered</directory>
+        <filtering>true</filtering>
+      </resource>
     </resources>
 
     <plugins>
+    
       <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>maven-tinkerbell-plugin</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>resources</id>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    
+      <plugin>
+        <groupId>io.takari</groupId>
+        <artifactId>maven-nolifecycle-plugin</artifactId>
+        <version>0.0.1</version>
         <extensions>true</extensions>
       </plugin>
 
       <plugin>
-        <groupId>org.sonatype.m2e.discovery.publisher</groupId>
+        <groupId>io.takari.m2e.discovery.publisher</groupId>
         <artifactId>org.sonatype.m2e.discovery.publisher.maven-plugin</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.4.1</version>
         <executions>
           <execution>
-            <id>catalog</id>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>catalog-1.1</id>
+            <id>catalog-2.x</id>
             <goals>
               <goal>generate</goal>
             </goals>
             <configuration>
-              <outputdir>${project.build.directory}/catalog-1.1</outputdir>
-              <m2eversion>1.1</m2eversion>
+              <descriptor>${project.build.directory}/classes/connectors.xml</descriptor>
+              <outputdir>${project.build.directory}/catalog-2.x</outputdir>
+              <!-- Need to update/redeploy https://github.com/takari/m2eclipse-discovery/ to support m2e > 1.6 -->
+              <m2eversion>1.6</m2eversion>
             </configuration>
           </execution>
         </executions>
@@ -71,10 +87,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.4.2</version>
         <configuration>
           <descriptors>
-            <descriptor>src/main/assembly/catalog.xml</descriptor>
-            <descriptor>src/main/assembly/catalog-1.1.xml</descriptor>
+            <descriptor>src/main/assembly/catalog-2.x.xml</descriptor>
             <descriptor>src/main/assembly/assembly.xml</descriptor>
           </descriptors>
         </configuration>
@@ -92,7 +108,7 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>maven-upload-plugin</artifactId>
         <version>0.0.1</version>
@@ -111,7 +127,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
     </plugins>
 
     <pluginManagement>
@@ -126,9 +142,9 @@
               <pluginExecutions>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>org.sonatype.m2e.discovery.publisher</groupId>
+                    <groupId>io.takari.m2e.discovery.publisher</groupId>
                     <artifactId>org.sonatype.m2e.discovery.publisher.maven-plugin</artifactId>
-                    <versionRange>[0.0.1-SNAPSHOT,)</versionRange>
+                    <versionRange>[0.0.1,)</versionRange>
                     <goals>
                       <goal>generate</goal>
                     </goals>
@@ -145,39 +161,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
-  <profiles>
-    <profile>
-      <id>catalog-stage</id>
-      <properties>
-        <catalog.server-url>http://repository.tesla.io:8081/nexus</catalog.server-url>      
-        <!-- Name of the hosted repository -->
-        <catalog.repo-name>m2e.discovery.stage</catalog.repo-name>
-        <catalog.repo-url-compressed>${catalog.server-url}/service/local/repositories/${catalog.repo-name}/content-compressed</catalog.repo-url-compressed>
-        <catalog.repo-url>${catalog.server-url}/content/repositories/${catalog.repo-name}</catalog.repo-url>
-      </properties>
-    </profile>
-
-    <profile>
-      <id>catalog-release</id>
-      <properties>
-        <catalog.server-url>http://repository.tesla.io:8081/nexus</catalog.server-url>      
-        <!-- Name of the hosted repository -->
-        <catalog.repo-name>m2e.discovery.release</catalog.repo-name>
-        <catalog.repo-url-compressed>${catalog.server-url}/service/local/repositories/${catalog.repo-name}/content-compressed</catalog.repo-url-compressed>
-        <catalog.repo-url>${catalog.server-url}/content/repositories/${catalog.repo-name}</catalog.repo-url>
-      </properties>
-    </profile>
-
-    <profile>
-      <id>catalog-nexus</id>
-      <properties>
-        <catalog.server-url>http://localhost:8081/nexus</catalog.server-url>
-        <!-- Name of the hosted repository -->
-        <catalog.repo-name>m2e.discovery.stage</catalog.repo-name>
-        <catalog.repo-url-compressed>${catalog.server-url}/service/local/repositories/${catalog.repo-name}/content-compressed</catalog.repo-url-compressed>
-        <catalog.repo-url>${catalog.server-url}/content/repositories/${catalog.repo-name}</catalog.repo-url>
-      </properties>
-    </profile>
-  </profiles>
 </project>

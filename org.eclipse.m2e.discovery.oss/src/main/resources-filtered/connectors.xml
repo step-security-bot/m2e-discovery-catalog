@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <categories>
+    <category>
+      <id>org.eclipse.m2e.discovery.category.lifecycles</id>
+      <name>Lifecycle Mappings</name>
+      <description>Lifecycle Mappings</description>
+      <relevance>30</relevance>
+      <icon>
+        <size>48</size>
+        <path>images/extras-48.png</path>
+      </icon>
+      <groupId>lifecycles</groupId>
+    </category>
+    <category>
+      <id>org.eclipse.m2e.discovery.category.scm</id>
+      <name>m2e Team providers</name>
+      <description>m2e integration with Eclipse team providers</description>
+      <relevance>10</relevance>
+      <icon>
+        <size>48</size>
+        <path>images/extras-48.png</path>
+      </icon>
+    </category>
+    <category>
+      <id>org.eclipse.m2e.discovery.category.maven</id>
+      <name>embedded maven runtimes</name>
+      <description>embedded maven runtimes</description>
+      <relevance>10</relevance>
+      <icon>
+        <size>48</size>
+        <path>images/extras-48.png</path>
+      </icon>
+    </category>
+    <category>
+      <id>org.eclipse.m2e.discovery.category.extras</id>
+      <name>Extras</name>
+      <description>Additional extensions enhancing m2e</description>
+      <relevance>5</relevance>
+      <icon>
+        <size>48</size>
+        <path>images/extras-48.png</path>
+      </icon>
+      <groupId>extras</groupId>
+    </category>
+  </categories>
+
+  <catalogItems>
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.6</m2e-versions>
+      <description>M2E Components for various Maven plug-ins.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-components</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e-components</name>
+      <provider>Community maintained</provider>
+      <p2>
+        <repositoryUrl>https://eclipseguru.github.io/m2eclipse-components/</repositoryUrl>
+        <iuId>org.eclipseguru.m2e.extras.components.feature.feature.group</iuId>
+      </p2>
+      <overview>
+        <summary>m2e-components</summary>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.5,1.6</m2e-versions>
+      <description>Tycho Configurator bridges tycho based projects and PDE</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecycles.tycho</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Tycho Configurator</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</repositoryUrl>
+        <iuId>org.sonatype.tycho.m2e.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.tycho.m2e</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Tycho is focused on a Maven-centric, manifest-first approach to building Eclipse plug-ins, features, update sites, RCP applications and OSGi bundles. Tycho is a set of Maven plugins and extensions for building Eclipse plugins and OSGi bundles with Maven. Eclipse plugins and OSGi bundles have their own metadata for expressing dependencies, source folder locations, etc. that are normally found in a Maven POM. Tycho uses native metadata for Eclipse plugins and OSGi bundles and uses
+          the POM to configure and drive the build. Tycho supports bundles, fragments, features, update site projects and RCP applications. Tycho also knows how to run JUnit test plugins using OSGi runtime and there is also support for sharing build results using Maven artifact repositories. Tycho plugins introduce new packaging types and the corresponding lifecycle bindings that allow Maven to use OSGi and Eclipse metadata during a Maven build. </summary>
+        <url>https://eclipse.org/tycho/</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>antlr</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.antlr</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>antlr</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-antlr/0.15.0/N/0.15.0.201207090124/</repositoryUrl>
+        <iuId>org.sonatype.m2e.antlr.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.m2e.antlr</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>antlr</summary>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>buildhelper</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.buildhelper</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>buildhelper</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/</repositoryUrl>
+        <iuId>org.sonatype.m2e.buildhelper.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.m2e.buildhelper</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>buildhelper</summary>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.5,1.6</m2e-versions>
+      <description>modello</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.modello</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>modello</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-modello/0.16.0/N/0.16.0.201409152009/</repositoryUrl>
+        <iuId>org.sonatype.m2e.modello.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.m2e.modello</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>modello</summary>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.5,1.6</m2e-versions>
+      <description>plexus-annotations</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.plexus-annotations</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>plexus-annotations</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-plexus/0.15.0/N/0.15.0.201207090126/</repositoryUrl>
+        <iuId>org.sonatype.m2e.plexus.annotations.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.m2e.plexus.annotations</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>plexus-annotations</summary>
+      </overview>
+    </catalogItem> -->
+
+    <!-- SISU -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.5,1.6</m2e-versions>
+      <description>Sisu Support</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.sisu</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Sisu Support</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-sisu/0.15.0/N/0.15.0.201409152019/</repositoryUrl>
+        <iuId>org.sonatype.m2e.sisu.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.sonatype.m2e.sisu</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>plexus-annotations</summary>
+      </overview>
+    </catalogItem> -->
+
+    <!-- WTP -->
+    <!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=353361 -->
+    <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.6</m2e-versions>
+      <description>m2e-wtp provides a set of connectors used for the configuration of Java EE projects in WTP</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp</id>
+      <kind>lifecycles</kind>
+      <license>EPL v2</license>
+      <name>m2e-wtp : Maven Integration for WTP (Incubation)</name>
+      <provider>Eclipse.org</provider>
+      <p2>
+        <repositoryUrl>https://download.eclipse.org/technology/m2e/m2e-wtp/releases/1.5.2/</repositoryUrl>
+        <iuId>org.eclipse.m2e.wtp.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.eclipse.m2e.wtp</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Maven Integration for Eclipse WTP (a.k.a m2e-wtp) aims at providing a tight integration between Maven Integration for Eclipse (a.k.a m2e) and the Eclipse Web Tools Project (WTP).
+          m2e-wtp provides a set of m2e connectors used for the configuration of Java EE projects in WTP.
+          m2e-wtp also brings some advanced Maven features to the Eclipse environment such as overlays of workspace project and .war archives dependencies and on-the-fly resource filtering.
+          Finally, m2e-wtp helps you convert your legacy Eclipse projects to Maven, by translating your Java EE eclipse project settings into maven plugin configuration.</summary>
+          <url>https://www.eclipse.org/m2e-wtp/</url>
+        </overview>
+      </catalogItem>
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.scm</categoryId>
+      <m2e-versions>1.6</m2e-versions>
+      <description>Maven SCM Handler for EGit</description>
+      <groupId>extras</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit</id>
+      <kind>extras</kind>
+      <license>EPL</license>
+      <name>m2e-egit</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>https://tesla.github.io/m2eclipse-egit/updates/</repositoryUrl>
+        <iuId>org.sonatype.m2e.egit.feature.feature.group</iuId>
+      </p2>
+      <overview>
+        <summary>Maven SCM Handler for EGit</summary>
+        <url>https://github.com/tesla/m2eclipse-egit</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+        <categoryId>org.eclipse.m2e.discovery.category.scm</categoryId>
+        <description>Subversive (3.0+) SVN Integration for the M2E Project</description>
+        <m2e-versions>1.6</m2e-versions>
+        <groupId>extras</groupId>
+        <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive</id>
+        <kind>extras</kind>
+        <license>EPL</license>
+        <name>m2e-subversive</name>
+        <provider>Eclipse.org</provider>
+        <p2>
+            <repositoryUrl>https://download.eclipse.org/technology/subversive/3.0/update-site/</repositoryUrl>
+            <iuId>org.eclipse.team.svn.m2e.feature.group</iuId>
+      </p2>
+      <overview>
+        <summary>Maven SCM Handler for Subversive 3.0</summary>
+        <url>https://www.eclipse.org/subversive/</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.scm</categoryId>
+      <description>Maven SCM Handler for Subclipse</description>
+      <m2e-versions>1.4,1.5</m2e-versions>
+      <groupId>extras</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse</id>
+      <kind>extras</kind>
+      <license>EPL</license>
+      <name>m2e-subclipse</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-subclipse/0.13.0/N/0.13.0.201303011221/</repositoryUrl>
+        <iuId>org.sonatype.m2e.subclipse.feature.feature.group</iuId>
+      </p2>
+      <overview>
+        <summary>Maven SCM Handler for Subclipse</summary>
+        <url>https://github.com/tesla/m2eclipse-subclipse</url>
+      </overview>
+    </catalogItem> -->
+    <!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=347556 -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>Applies configuration from the maven-checkstyle-plugin to the Eclipse Checkstyle plugin. Disables execution of the maven-checkstyle-plugin within Eclipse in favor of the Eclipse plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecycles.m2echeckstyle</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-checkstyle</name>
+      <provider>Benson Margulies etc @ m2e-code-quality.github.com</provider>
+      <p2>
+        <repositoryUrl>https://m2e-code-quality.github.io/m2e-code-quality/site/latest/</repositoryUrl>
+        <iuId>com.basistech.m2e.code.quality.checkstyle.feature.feature.group</iuId>
+        <iuVersion>1.0.0.201307281919</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>com.basistech.m2e.code.quality.checkstyle</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e support for the maven-checkstyle-plugin.</summary>
+        <url>https://github.com/m2e-code-quality/m2e-code-quality</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>applies configuration from the maven-pmd-plugin to the Eclipse PMD plugin. Disables execution of the maven-pmd-plugin within Eclipse in favor of the Eclipse plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecycles.m2epmd</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-pmd</name>
+      <provider>Benson Margulies etc @ m2e-code-quality.github.com</provider>
+      <p2>
+        <repositoryUrl>https://m2e-code-quality.github.io/m2e-code-quality/site/latest/</repositoryUrl>
+        <iuId>com.basistech.m2e.code.quality.pmd.feature.feature.group</iuId>
+        <iuVersion>1.0.0.201307281919</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>com.basistech.m2e.code.quality.pmd</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e support for the maven-pmd-plugin.</summary>
+        <url>https://github.com/m2e-code-quality/m2e-code-quality</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>Applies configuration from the maven-findbugs-plugin to the Eclipse Findbugs plugin. Disables execution of the maven-findbugs-plugin within Eclipse in favor of the Eclipse plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecycles.m2efindbugs</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-findbugs</name>
+      <provider>Bela Eröss etc @ m2e-code-quality.github.com</provider>
+      <p2>
+        <repositoryUrl>https://m2e-code-quality.github.io/m2e-code-quality/site/latest/</repositoryUrl>
+        <iuId>com.basistech.m2e.code.quality.findbugs.feature.feature.group</iuId>
+        <iuVersion>1.0.0.201307281919</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>com.basistech.m2e.code.quality.findbugs</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e support for the maven-findbugs-plugin.</summary>
+        <url>https://github.com/m2e-code-quality/m2e-code-quality</url>
+      </overview>
+    </catalogItem> -->
+    <!-- dependencypath -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>m2e connector for Dependency Path Maven plugins, https://github.com/bitstrings/dependencypath-maven-plugin</description>
+      <groupId>lifecycles</groupId>
+
+      <id>org.eclipse.m2e.discovery.lifecycles.org.bitstrings.eclipse.m2e.connectors.dependencypath</id>
+      <kind>lifecycles</kind>
+      <license>EPL v1.0</license>
+      <name>m2e connector for org.bitstrings.maven.plugins:dependencypath-maven-plugin</name>
+      <provider>bitstrings.org - Pino Silvaggio</provider>
+      <p2>
+        <repositoryUrl>https://bitstrings.github.io/m2e-connectors-p2/releases</repositoryUrl>
+        <iuId>org.bitstrings.eclipse.m2e.connectors.dependencypath.feature.feature.group</iuId>
+        <iuVersion>4.0.0.201408251917</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.bitstrings.eclipse.m2e.connectors.dependencypath</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for org.bitstrings.maven.plugins:dependencypath-maven-plugin</summary>
+        <url>https://bitstrings.org</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>m2e connector for Jaxb2 Maven plugins,
+        https://mojo.codehaus.org/jaxb2-maven-plugin and
+        https://java.net/projects/maven-jaxb2-plugin/pages/Home
+      </description>
+      <groupId>lifecycles</groupId>
+
+      <id>org.eclipse.m2e.discovery.lifecycles.org.bitstrings.eclipse.m2e.connectors.jaxb2</id>
+      <kind>lifecycles</kind>
+      <license>EPL v1.0</license>
+      <name>m2e connector for org.codehaus.mojo:jaxb2-maven-plugin and org.jvnet.jaxb2.maven2:maven-jaxb2-plugin</name>
+      <provider>bitstrings.org - Pino Silvaggio</provider>
+      <p2>
+        <repositoryUrl>https://bitstrings.github.io/m2e-connectors-p2/releases</repositoryUrl>
+        <iuId>org.bitstrings.eclipse.m2e.connectors.jaxb2.feature.feature.group</iuId>
+        <iuVersion>4.0.0.201408251917</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.bitstrings.eclipse.m2e.connectors.jaxb2</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for org.codehaus.mojo:jaxb2-maven-plugin and org.jvnet.jaxb2.maven2:maven-jaxb2-plugin</summary>
+        <url>https://bitstrings.org</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>m2e connector for XmlBeans Maven plugin, https://mojo.codehaus.org/xmlbeans-maven-plugin</description>
+      <groupId>lifecycles</groupId>
+      
+      <id>org.eclipse.m2e.discovery.lifecycles.org.bitstrings.eclipse.m2e.connectors.xmlbeans</id>
+      <kind>lifecycles</kind>
+      <license>EPL v1.0</license>
+      <name>m2e connector for org.codehaus.mojo:xmlbeans-maven-plugin</name>
+      <provider>bitstrings.org - Pino Silvaggio</provider>
+      <p2>
+        <repositoryUrl>https://bitstrings.github.io/m2e-connectors-p2/releases</repositoryUrl>
+        <iuId>org.bitstrings.eclipse.m2e.connectors.xmlbeans.feature.feature.group</iuId>
+        <iuVersion>4.0.0.201408251917</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.bitstrings.eclipse.m2e.connectors.xmlbeans</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for org.codehaus.mojo:xmlbeans-maven-plugin</summary>
+        <url>https://bitstrings.org</url>
+      </overview>
+    </catalogItem> -->
+
+    <!--
+      initial https://bugs.eclipse.org/bugs/show_bug.cgi?id=353529
+      version 0.4.0 https://bugs.eclipse.org/bugs/show_bug.cgi?id=363574
+    -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>Android for Maven Eclipse</description>
+      <groupId>lifecycles</groupId>
+      <id>me.gladwell.eclipse.m2e.android</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Android Connector</name>
+      <provider>Gladwell Consultants Ltd.</provider>
+      <p2>
+        <repositoryUrl>https://rgladwell.github.io/m2e-android/updates/</repositoryUrl>
+        <iuId>me.gladwell.eclipse.m2e.android.feature.feature.group</iuId>
+        <iuVersion>1.4.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>me.gladwell.eclipse.m2e.android</iuId>
+        </lifecycleMappingIU>
+        <rootIU>
+          <iuId>com.android.ide.eclipse.adt.feature.feature.group</iuId>
+        </rootIU>
+        <rootIU>
+          <iuId>com.android.ide.eclipse.ddms.feature.feature.group</iuId>
+        </rootIU>
+        <rootIU>
+          <iuId>com.android.ide.eclipse.traceview.feature.feature.group</iuId>
+        </rootIU>
+      </p2>
+      <overview>
+        <summary>Android for Maven Eclipse</summary>
+        <url>https://rgladwell.github.com/m2e-android</url>
+      </overview>
+    </catalogItem> -->
+    <!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=357118 -->
+    <!--
+    <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <description>Groovy-Eclipse m2e configurator</description>
+      <groupId>lifecycles</groupId>
+      <m2e-versions>1.6</m2e-versions>
+      <id>org.codehaus.groovy.m2eclipse</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Groovy-Eclipse</name>
+      <provider>Groovy-Eclipse</provider>
+      <p2>
+        <repositoryUrl>https://dist.springsource.org/snapshot/GRECLIPSE/e4.14/</repositoryUrl>
+        <iuId>org.codehaus.groovy.m2eclipse.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.codehaus.groovy.m2eclipse</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Maven Integration for Groovy-Eclipse</summary>
+        <url>https://github.com/groovy/groovy-eclipse</url>
+      </overview>
+    </catalogItem>
+  -->
+  <!--
+    <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <description>AspectJ m2e configurator</description>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <groupId>lifecycles</groupId>
+      <id>org.maven.ide.eclipse.ajdt</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>AspectJ</name>
+      <provider>SpringSource</provider>
+      <p2>
+        <repositoryUrl>https://dist.springsource.org/release/AJDT/configurator-v2/</repositoryUrl>
+        <iuId>org.maven.ide.eclipse.ajdt.feature.feature.group</iuId>
+        <iuVersion>0.14.0.201506231302</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.maven.ide.eclipse.ajdt</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Maven Integration for AspectJ Development Tools</summary>
+        <url>https://eclipse.org/ajdt</url>
+      </overview>
+    </catalogItem>
+  -->
+    <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.6</m2e-versions>
+      <description>m2e connector for maven-wro4j-plugin</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-wro4j</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for maven-wro4j-plugin</name>
+      <provider>JBoss by Red Hat</provider>
+      <p2>
+        <repositoryUrl>https://github.com/jbosstools/m2e-wro4j/releases/download/1.2.0/</repositoryUrl>
+        <iuId>org.jboss.tools.m2e.wro4j.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.jboss.tools.m2e.wro4j.core</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Adds support for maven-wro4j-plugin</summary>
+        <url>https://github.com/jbosstools/m2e-wro4j</url>
+      </overview>
+    </catalogItem>
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E extension to ignore the Mycila license plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-mycila-license</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-mycila-license</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.mycila_license.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.mycila-license</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the mycila license plugin.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E extension to ignore the Ning duplicate-finder plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-ning-duplicate-finder</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-ning-duplicate-finder</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.ning_duplicate_finder.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.ning-duplicate-finder</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the Ning duplicate-finder plugin.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E extension to ignore the Ning dependency-versions-check plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-ning-dependency-versions-check</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-ning-dependency-versions-check</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.ning_dependency_versions_check.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.ning-dependency-versions-check</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the Ning dependency-versions-check plugin.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E extension to ignore the org.basepom duplicate-finder plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-duplicate-finder</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-duplicate-finder</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.duplicate_finder.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.duplicate-finder</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the org.basepom duplicate-finder plugin.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E extension for the org.basepom property-helper plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-property-helper</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-property-helper</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.property_helper.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.property-helper</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the org.basepom property-helper plugin.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+        <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+        <m2e-versions>1.4,1.5</m2e-versions>
+        <description>Maven integration for Liferay IDE and the liferay-maven-plugin</description>
+        <groupId>lifecycles</groupId>
+        <id>org.eclipse.m2e.discovery.lifecyclemapping.liferay-maven-plugin</id>
+        <kind>lifecycles</kind>
+        <license>LGPL</license>
+        <name>m2e connector for liferay-maven-plugin</name>
+        <provider>Liferay, Inc.</provider>
+        <p2>
+            <repositoryUrl>https://releases.liferay.com/tools/ide/latest/stable/</repositoryUrl>
+            <iuId>com.liferay.ide.maven.feature.group</iuId>
+            <iuVersion>2.0.0.201312200205-ga1</iuVersion>
+            <lifecycleMappingIU>
+                <iuId>com.liferay.ide.maven.core</iuId>
+            </lifecycleMappingIU>
+        </p2>
+        <overview>
+            <summary>Provides the lifecycle mapping for liferay-maven-plugin projects and also integration for other liferay goals</summary>
+            <url>https://github.com/liferay/liferay-ide</url>
+        </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5</m2e-versions>
+      <description>Maven Integration for Scala IDE and the scala-maven-plugin</description>
+      <groupId>lifecycles</groupId>
+      <id>org.sonatype.m2e.discovery.lifecyclemapping.scala-maven-plugin</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for scala-maven-plugin</name>
+      <provider>Takari, Inc. - David Bernard</provider>
+      <p2>
+        <repositoryUrl>https://alchim31.free.fr/m2e-scala/update-site/m2eclipse-scala/</repositoryUrl>
+        <iuId>org.maven.ide.eclipse.scala_feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.maven.ide.eclipse.scala</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Provides the lifecycle mapping for scala-maven-plugin</summary>
+        <url>https://github.com/sonatype/m2eclipse-scala</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>m2e connector for the Maven Dependency Plugin</description>
+      <groupId>lifecycles</groupId>
+      <id>com.ianbrandt.tools.m2e.discovery.lifecyclemapping.maven-dependency-plugin</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for maven-dependency-plugin</name>
+      <provider>Ian Brandt</provider>
+      <p2>
+        <repositoryUrl>https://ianbrandt.github.io/m2e-maven-dependency-plugin/0.0.4/</repositoryUrl>
+        <iuId>com.ianbrandt.tools.m2e.mdp.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>com.ianbrandt.tools.m2e.mdp.core</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for the Maven Dependency Plugin</summary>
+        <url>https://github.com/ianbrandt/m2e-maven-dependency-plugin</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5</m2e-versions>
+      <description>m2e connector for Xtend Maven plugin, https://www.eclipse.org/xtend/</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.xtend.m2e.xtendConfigurator</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for xtend-maven-plugin</name>
+      <provider>Eclipse Xtend</provider>
+      <p2>
+        <repositoryUrl>https://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</repositoryUrl>
+        <iuId>org.eclipse.xtend.sdk.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.eclipse.xtend.m2e</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for Xtend Maven plugin</summary>
+        <url>https://www.eclipse.org/xtend/</url>
+      </overview>
+    </catalogItem> -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5</m2e-versions>
+      <description>m2e connector for Xtext Maven plugin, https://www.eclipse.org/Xtext/</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.xtext.m2e.xtextConfigurator</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for xtext-maven-plugin</name>
+      <provider>Eclipse Modeling Project</provider>
+      <p2>
+        <repositoryUrl>https://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</repositoryUrl>
+        <iuId>org.eclipse.xtext.sdk.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>org.eclipse.xtext.m2e</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for Xtext Maven plugin</summary>
+        <url> https://www.eclipse.org/Xtext/</url>
+      </overview>
+    </catalogItem> -->
+    <!-- maven development tools 
+    <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.6</m2e-versions>
+      <description>Maven Development Tools</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-mavendev</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Maven Development Tools</name>
+      <provider>Igor Fedorenko</provider>
+      <p2>
+        <repositoryUrl>https://ifedorenko.github.io/m2e-extras/</repositoryUrl>
+        <iuId>com.ifedorenko.m2e.mavendev.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>com.ifedorenko.m2e.mavendev</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Maven Development Tools</summary>
+      </overview>
+    </catalogItem>
+-->
+    <!-- takari lifecycle and incrementalbuild. -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.5,1.6</m2e-versions>
+      <description>Takari Lifecycle Support</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.takari-lifecycle</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>Takari Lifecycle Support</name>
+      <provider>Takari, Inc.</provider>
+      <p2>
+        <repositoryUrl>${connectorUrl}/m2eclipse-takari-lifecycle/0.1.0/N/LATEST/</repositoryUrl>
+        <iuId>io.takari.m2e.lifecycle.feature.feature.group</iuId>
+        <rootIU>
+          <iuId>io.takari.m2e.lifecycle.feature.feature.group</iuId>
+        </rootIU>
+        <rootIU>
+          <iuId>io.takari.stats.m2e.feature.feature.group</iuId>
+        </rootIU>
+        <rootIU>
+          <iuId>org.eclipse.m2e.feature.feature.group</iuId>
+        </rootIU>
+        <rootIU>
+          <iuId>org.eclipse.m2e.logback.feature.feature.group</iuId>
+        </rootIU>
+        <lifecycleMappingIU>
+          <iuId>io.takari.m2e.incrementalbuild.core</iuId>
+        </lifecycleMappingIU>
+        <lifecycleMappingIU>
+          <iuId>io.takari.m2e.jdt.core</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>Takari Lifecycle Support</summary>
+      </overview>
+    </catalogItem> -->
+    <!-- m2e connector for jaxws-maven-plugin -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>This connector will handle the 'wsimport','wsgen','wsimport-test' and 'wsgen-test' goals of the jaxws-maven-plugin</description>
+      <groupId>lifecycles</groupId>
+      <id>com.coderplus.m2e.jaxws.feature.group</id>
+      <kind>lifecycles</kind>
+      <license>EPL</license>
+      <name>m2e connector for jaxws-maven-plugin</name>
+      <provider>CoderPlus</provider>
+      <p2>
+        <repositoryUrl>https://coderplus.github.io/m2e-connector-for-jaxws-maven-plugin/</repositoryUrl>
+        <iuId>com.coderplus.m2e.jaxws.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>com.coderplus.m2e.jaxwscore</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>m2e connector for jaxws-maven-plugin</summary>
+        <url>https://github.com/coderplus/m2e-connector-for-jaxws-maven-plugin</url>
+      </overview>
+     </catalogItem> -->
+       <!-- <catalogItem>
+         <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+         <m2e-versions>1.4,1.5,1.6</m2e-versions>
+         <description>This connector will handle the 'process' and 'bundle' goals of the maven-remote-resources-plugin</description>
+         <groupId>lifecycles</groupId>
+         <id>com.coderplus.m2e.remoteresourcesfeature.feature.group</id>
+         <kind>lifecycles</kind>
+         <license>EPL</license>
+         <name>m2e connector for maven-remote-resources-plugin</name>
+         <provider>CoderPlus</provider>
+          <p2>
+                 <repositoryUrl>https://coderplus.github.io/m2e-connector-for-maven-remote-resources-plugin/</repositoryUrl>
+                 <iuId>com.coderplus.m2e.remoteresourcesfeature.feature.group</iuId>
+                 <lifecycleMappingIU>
+                   <iuId>com.coderplus.m2e.remoteresourcescore</iuId>
+                 </lifecycleMappingIU>
+         </p2>
+         <overview>
+           <summary>m2e connector for maven-remote-resources-plugin</summary>
+           <url>https://github.com/coderplus/m2e-connector-for-maven-remote-resources-plugin</url>
+         </overview>
+       </catalogItem> -->
+       <!-- <catalogItem>
+         <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+         <m2e-versions>1.4,1.5,1.6</m2e-versions>
+         <description>This connector will handle the 'compress' and 'jslint' goals of the yuicompressor-maven-plugin</description>
+         <groupId>lifecycles</groupId>
+         <id>com.coderplus.m2e.yuicompressorfeature.feature.group</id>
+         <kind>lifecycles</kind>
+         <license>EPL</license>
+         <name>m2e connector for yuicompressor-maven-plugin</name>
+         <provider>CoderPlus</provider>
+          <p2>
+                 <repositoryUrl>https://coderplus.github.io/m2e-connector-yuicompressor-maven-plugin/</repositoryUrl>
+                 <iuId>com.coderplus.m2e.yuicompressorfeature.feature.group</iuId>
+                 <lifecycleMappingIU>
+                   <iuId>com.coderplus.m2e.yuicompressorcore</iuId>
+                 </lifecycleMappingIU>
+         </p2>
+         <overview>
+           <summary>m2e connector for yuicompressor-maven-plugin</summary>
+           <url>https://github.com/coderplus/m2e-connector-yuicompressor-maven-plugin</url>
+         </overview>
+        </catalogItem> -->
+      <!-- m2e connector for org.codehaus.mojo:axistools-maven-plugin -->
+      <!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=350909 -->
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>m2e connector for org.codehaus.mojo:axistools-maven-plugin</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecycles.de.theit.m2e.axistools</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e axistools</name>
+      <provider>Thorsten Heit</provider>
+      <p2>
+        <repositoryUrl>https://theit.github.io/m2e-lifecycle-axistools</repositoryUrl>
+        <iuId>de.theit.m2e.axistools.feature.feature.group</iuId>
+        <lifecycleMappingIU>
+          <iuId>de.theit.m2e.axistools</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>This plugin extends m2e and adds support for the Axis Tools Maven plugin (https://mojo.codehaus.org/axistools-maven-plugin/). It allows for automatically generating Java source code from a WSDL and adds the generated source code folder to the Java build path.</summary>
+        <url>https://github.com/theit/m2e-lifecycle-axistools</url>
+      </overview>
+    </catalogItem> -->
+
+    <!-- <catalogItem>
+      <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <description>M2E Extension for the Apache axis2-wsdl2code plugin.</description>
+      <groupId>lifecycles</groupId>
+      <id>org.eclipse.m2e.discovery.lifecyclemapping.m2e-apache-axis2-wsdl2code</id>
+      <kind>lifecycles</kind>
+      <license>ASL</license>
+      <name>m2e-apache-axis2-wsdl2code</name>
+      <provider>basepom.org</provider>
+      <p2>
+        <repositoryUrl>https://basepom.github.io/basepom-m2e/update-site/latest/</repositoryUrl>
+        <iuId>org.basepom.m2e.apache_axis2_wsdl2code.feature.feature.group</iuId>
+        <iuVersion>1.1.0</iuVersion>
+        <lifecycleMappingIU>
+          <iuId>org.basepom.m2e.apache-axis2-wsdl2code</iuId>
+        </lifecycleMappingIU>
+      </p2>
+      <overview>
+        <summary>M2E extension for the Apache axis2-wsdl2code plugin. It allows for automatic generation of source code and resources from the WSDL files and adds the generated source code folders to the Java build path.</summary>
+        <url>https://github.com/basepom/basepom-m2e</url>
+      </overview>
+    </catalogItem> -->
+
+  </catalogItems>
+</catalog>

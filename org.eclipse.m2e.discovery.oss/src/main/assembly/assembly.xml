@@ -8,10 +8,16 @@
     <fileSet>
       <directory>${project.build.directory}</directory>
       <includes>
-        <include>${project.artifactId}-catalog.jar</include>
-        <include>${project.artifactId}-catalog-1.1.jar</include>
+        <include>${project.artifactId}-catalog-2.x.jar</include>
       </includes>
       <outputDirectory>/</outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/classes</directory>
+      <includes>
+        <include>connectors.xml</include>
+      </includes>
+      <outputDirectory>/</outputDirectory>
+    </fileSet>    
   </fileSets>
 </assembly>

@@ -18,21 +18,21 @@
   </modules>
 
   <properties>
-    <tycho-version>0.11.0</tycho-version>
+    <tycho-version>2.7.5</tycho-version>
 
-    <m2e-core.url>http://download.eclipse.org/technology/m2e/releases/1.0</m2e-core.url>
+    <m2e-core.url>https://download.eclipse.org/technology/m2e/releases/2.0.5</m2e-core.url>
   </properties>
 
   <build>
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.sonatype.tycho</groupId>
+          <groupId>org.eclipse.tycho</groupId>
           <artifactId>maven-osgi-lifecycle-plugin</artifactId>
           <version>${tycho-version}</version>
         </plugin>
         <plugin>
-          <groupId>org.sonatype.tycho</groupId>
+          <groupId>org.eclipse.tycho</groupId>
           <artifactId>maven-osgi-packaging-plugin</artifactId>
           <version>${tycho-version}</version>
           <configuration>
@@ -41,7 +41,7 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.sonatype.tycho</groupId>
+          <groupId>org.eclipse.tycho</groupId>
           <artifactId>maven-osgi-test-plugin</artifactId>
           <version>${tycho-version}</version>
           <configuration>
@@ -54,16 +54,16 @@
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.sonatype.tycho</groupId>
+          <groupId>org.eclipse.tycho</groupId>
           <artifactId>maven-osgi-compiler-plugin</artifactId>
           <version>${tycho-version}</version>
           <configuration>
-            <source>1.5</source>
-            <target>1.5</target>
+            <source>1.8</source>
+            <target>1.8</target>
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.sonatype.tycho</groupId>
+          <groupId>org.eclipse.tycho</groupId>
           <artifactId>tycho-p2-plugin</artifactId>
           <version>${tycho-version}</version>
         </plugin>
@@ -71,19 +71,9 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>2.4.3</version>
+          <version>3.3.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>rso-snapshots</id>
-      <url>https://repository.sonatype.org/content/repositories/snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
 </project>
