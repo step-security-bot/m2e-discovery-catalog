@@ -2,6 +2,6 @@
 <!-- This file is used for testing purposes -->
 <directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
   <entry
-    url="file:${basedir}/target/org.eclipse.m2e.discovery.oss-catalog-2.x.jar" 
+    url="${catalog.jar.url}" 
     permitCategories="true" />
 </directory>

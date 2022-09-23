@@ -1,12 +1,9 @@
 name: Building and deploying the catalog
 
 on:
-  pull_request:
   push:
     branches:
       - master
-    tags:
-      - "*.*.*"
 
 jobs:
   build:
@@ -25,19 +22,14 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B verify --update-snapshots --file pom.xml
-    
-    - name: Move catalog jars to public directory
-      if: github.ref == 'refs/heads/master' && success() 
-      run: |
-        mkdir -p public/catalogs
-        cp org.eclipse.m2e.discovery.oss/target/*.jar ./public/catalogs
 
     - name: Deploy to GitHub pages
       if: github.ref == 'refs/heads/master' && success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./target/classes/catalogs
+        destination_dir: catalogs
         keep_files: true
 
     - name: Deploy p2 update site

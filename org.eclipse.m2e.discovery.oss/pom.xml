@@ -23,6 +23,7 @@
    -->
   <properties>
     <connectorUrl>https://repo1.maven.org/maven2/.m2e/connectors</connectorUrl>
+    <catalog.jar.url>file:${basedir}/target/org.eclipse.m2e.discovery.oss-catalog-2.x.jar</catalog.jar.url>
   </properties>
   <build>
     <resources>
@@ -161,4 +162,12 @@
       </plugins>
     </pluginManagement>
   </build>
+  <profiles>
+    <profile>
+      <id>CI</id>
+      <properties>
+        <catalog.jar.url>https://github.com/eclipse-m2e/m2e-discovery-catalog/releases/download/2.x/org.eclipse.m2e.discovery.oss-catalog-2.x.jar</catalog.jar.url>
+      </properties>
+    </profile>
+  </profiles>
 </project>
