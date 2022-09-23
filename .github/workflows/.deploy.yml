@@ -28,7 +28,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./target/classes/catalogs
+        publish_dir: ./org.eclipse.m2e.discovery.oss/target/classes/catalogs
         destination_dir: catalogs
         keep_files: true
 
