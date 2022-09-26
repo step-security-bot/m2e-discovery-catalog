@@ -64,9 +64,9 @@
         <summary>m2e-components</summary>
       </overview>
     </catalogItem> -->
-    <!-- <catalogItem>
+    <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
-      <m2e-versions>1.5,1.6</m2e-versions>
+      <m2e-versions>1.6</m2e-versions>
       <description>Tycho Configurator bridges tycho based projects and PDE</description>
       <groupId>lifecycles</groupId>
       <id>org.eclipse.m2e.discovery.lifecycles.tycho</id>
@@ -75,7 +75,7 @@
       <name>Tycho Configurator</name>
       <provider>Takari, Inc.</provider>
       <p2>
-        <repositoryUrl>${connectorUrl}/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</repositoryUrl>
+        <repositoryUrl>https://github.com/tesla/m2eclipse-tycho/releases/download/latest/</repositoryUrl>
         <iuId>org.sonatype.tycho.m2e.feature.feature.group</iuId>
         <lifecycleMappingIU>
           <iuId>org.sonatype.tycho.m2e</iuId>
@@ -86,7 +86,7 @@
           the POM to configure and drive the build. Tycho supports bundles, fragments, features, update site projects and RCP applications. Tycho also knows how to run JUnit test plugins using OSGi runtime and there is also support for sharing build results using Maven artifact repositories. Tycho plugins introduce new packaging types and the corresponding lifecycle bindings that allow Maven to use OSGi and Eclipse metadata during a Maven build. </summary>
         <url>https://eclipse.org/tycho/</url>
       </overview>
-    </catalogItem> -->
+    </catalogItem>
 
     <!-- <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
