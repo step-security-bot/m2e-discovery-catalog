@@ -6,14 +6,17 @@ As a normal Maven user in Eclipse there is nothing special you have to do. If yo
 
 # Testing the M2E Discovery Catalog as a User
 
-If you know that one of the connectors you use has been updated in the staging catalog then you can try the new connector by specifying the staged catalog during the startup of Eclipse. by updating the eclipse.ini file in your Eclipse installation:
+If you know that one of the connectors you use has been released in a new version then you can try the new connector by specifying the released catalog during the startup of Eclipse by updating the eclipse.ini file in your Eclipse installation:
 
 ```
 -vmargs
 ...
 ...
--Dm2e.discovery.url=http://download.eclipse.org/technology/m2e/discovery/directory-test-1.5.xml                                                                         
+-Dm2e.discovery.url=https://github.com/eclipse-m2e/m2e-discovery-catalog/releases/download/2.x/catalog-2.x.xml
 ```
+
+All published catalogs are available as GitHub artifacts in [Releases](https://github.com/eclipse-m2e/m2e-discovery-catalog/releases).
+
 # Adding New Discovery Catalog Entries 
 
 Adding new entries to the discovery catalog is a matter of creating a pull request with your new, well tested, entry. The process consists of making the appropriate edits to the [connectors document][1], building the catalog, and testing the that the connector is available for  your target project types and the import process works correctly.
