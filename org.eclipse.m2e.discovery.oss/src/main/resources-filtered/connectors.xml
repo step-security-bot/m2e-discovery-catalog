@@ -226,7 +226,7 @@
           <url>https://www.eclipse.org/m2e-wtp/</url>
         </overview>
       </catalogItem>
-    <!-- <catalogItem>
+    <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.scm</categoryId>
       <m2e-versions>1.6</m2e-versions>
       <description>Maven SCM Handler for EGit</description>
@@ -237,14 +237,14 @@
       <name>m2e-egit</name>
       <provider>Takari, Inc.</provider>
       <p2>
-        <repositoryUrl>https://tesla.github.io/m2eclipse-egit/updates/</repositoryUrl>
+        <repositoryUrl>https://github.com/tesla/m2eclipse-egit/releases/download/0.17.0/</repositoryUrl>
         <iuId>org.sonatype.m2e.egit.feature.feature.group</iuId>
       </p2>
       <overview>
         <summary>Maven SCM Handler for EGit</summary>
         <url>https://github.com/tesla/m2eclipse-egit</url>
       </overview>
-    </catalogItem> -->
+    </catalogItem>
     <!-- <catalogItem>
         <categoryId>org.eclipse.m2e.discovery.category.scm</categoryId>
         <description>Subversive (3.0+) SVN Integration for the M2E Project</description>
