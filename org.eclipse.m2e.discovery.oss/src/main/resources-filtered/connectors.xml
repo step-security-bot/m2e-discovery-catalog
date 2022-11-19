@@ -132,27 +132,27 @@
       </overview>
     </catalogItem> -->
 
-    <!-- <catalogItem>
+    <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
-      <m2e-versions>1.5,1.6</m2e-versions>
-      <description>modello</description>
+      <m2e-versions>1.6</m2e-versions>
+      <description>m2e support for Modello</description>
       <groupId>lifecycles</groupId>
       <id>org.eclipse.m2e.discovery.lifecyclemapping.modello</id>
       <kind>lifecycles</kind>
       <license>EPL</license>
-      <name>modello</name>
+      <name>Modello</name>
       <provider>Takari, Inc.</provider>
       <p2>
-        <repositoryUrl>${connectorUrl}/m2eclipse-modello/0.16.0/N/0.16.0.201409152009/</repositoryUrl>
+        <repositoryUrl>https://github.com/tesla/m2eclipse-modello/releases/download/latest/</repositoryUrl>
         <iuId>org.sonatype.m2e.modello.feature.feature.group</iuId>
         <lifecycleMappingIU>
           <iuId>org.sonatype.m2e.modello</iuId>
         </lifecycleMappingIU>
       </p2>
       <overview>
-        <summary>modello</summary>
+        <summary>m2e support for Modello</summary>
       </overview>
-    </catalogItem> -->
+    </catalogItem>
 
     <!-- <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
