@@ -110,9 +110,9 @@
       </overview>
     </catalogItem> -->
 
-    <!-- <catalogItem>
+    <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
-      <m2e-versions>1.4,1.5,1.6</m2e-versions>
+      <m2e-versions>1.6</m2e-versions>
       <description>buildhelper</description>
       <groupId>lifecycles</groupId>
       <id>org.eclipse.m2e.discovery.lifecyclemapping.buildhelper</id>
@@ -121,16 +121,16 @@
       <name>buildhelper</name>
       <provider>Takari, Inc.</provider>
       <p2>
-        <repositoryUrl>${connectorUrl}/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/</repositoryUrl>
+        <repositoryUrl>https://github.com/tesla/m2eclipse-buildhelper/releases/download/latest/</repositoryUrl>
         <iuId>org.sonatype.m2e.buildhelper.feature.feature.group</iuId>
         <lifecycleMappingIU>
           <iuId>org.sonatype.m2e.buildhelper</iuId>
         </lifecycleMappingIU>
       </p2>
       <overview>
-        <summary>buildhelper</summary>
+        <summary>m2e support for build-helper-maven-plugin versions prior to 3.0.0</summary>
       </overview>
-    </catalogItem> -->
+    </catalogItem>
 
     <catalogItem>
       <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>

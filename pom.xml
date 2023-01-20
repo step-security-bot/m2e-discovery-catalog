@@ -19,6 +19,7 @@
 
   <properties>
     <tycho-version>2.7.5</tycho-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <m2e-core.url>https://download.eclipse.org/technology/m2e/releases/2.0.5</m2e-core.url>
   </properties>
 
